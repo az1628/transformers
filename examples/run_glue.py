@@ -22,7 +22,7 @@ import json
 import logging
 import os
 import random
-random.seed(3)
+random.seed(30000)
 
 import numpy as np
 import torch
