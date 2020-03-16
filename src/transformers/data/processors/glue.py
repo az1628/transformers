@@ -565,7 +565,7 @@ class BoolqProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line['question']
-            text_b = line['passage']
+            text_b = line['answer']
             label = line['label']
             examples.append(InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
         return examples
