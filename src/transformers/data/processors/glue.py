@@ -18,7 +18,8 @@
 import logging
 import os
 import  json 
-
+import random
+random.seed(3)
 from ...file_utils import is_tf_available
 from .utils import DataProcessor, InputExample, InputFeatures
 
