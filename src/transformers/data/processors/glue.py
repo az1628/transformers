@@ -562,7 +562,7 @@ class BoolqProcessor(DataProcessor):
         for (i, line) in enumerate(lines):
             if i == 0:
                 continue
-            guid = "%s-%s" % (set_type, line[i])
+            guid = "%s-%s" % (set_type, i)
             text_a = line['question']
             text_b = line['passage']
             label = line['label']
