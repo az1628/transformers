@@ -537,7 +537,7 @@ class BoolqProcessor(DataProcessor):
             ndata = []
             for i in data:
                
-                data.append(json.loads(i.strip('\n')))
+                ndata.append(json.loads(i.strip('\n')))
         return self._create_examples(ndata,'train')
 
     def get_dev_examples(self, data_dir):
@@ -548,7 +548,7 @@ class BoolqProcessor(DataProcessor):
             ndata = []
             for i in data:
                
-                data.append(json.loads(i.strip('\n')))
+                ndata.append(json.loads(i.strip('\n')))
         return self._create_examples(ndata,'dev')
         
 
