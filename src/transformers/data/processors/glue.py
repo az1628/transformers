@@ -17,7 +17,7 @@
 
 import logging
 import os
-import simplejson as json 
+import  json 
 
 from ...file_utils import is_tf_available
 from .utils import DataProcessor, InputExample, InputFeatures
