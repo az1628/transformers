@@ -525,8 +525,8 @@ class BoolqProcessor(DataProcessor):
         """See base class."""
         return InputExample(
             tensor_dict["idx"].numpy(),
+            tensor_dict["passage"].numpy().decode("utf-8"),
             tensor_dict["question"].numpy().decode("utf-8"),
-            tensor_dict["sentence"].numpy().decode("utf-8"),
             str(tensor_dict["label"].numpy()),
         )
 
